@@ -7,7 +7,6 @@ Mimi decoding internally.
 """
 
 from __future__ import annotations
-
 import numpy as np
 import torch
 from transformers import AutoFeatureExtractor, MimiModel

@@ -1,9 +1,7 @@
 """Shared contract for inference backends so scripts/inference.py can swap them."""
 
 from __future__ import annotations
-
 from abc import ABC, abstractmethod
-
 import numpy as np
 
 

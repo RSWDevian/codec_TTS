@@ -1,1 +1,0 @@
-Placeholder. Today: Kyutai Mimi (pretrained, via `transformers.MimiModel`) — 8 RVQ codebooks, codebook size 2048, 12.5Hz frame rate, 24kHz audio. See `codec/README.md`. Future: custom codec architecture notes go here once `codec/future/` is implemented.

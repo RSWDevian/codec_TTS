@@ -1,1 +1,0 @@
-Placeholder. `scripts/inference.py` prints wall-clock latency per call today; no formal latency benchmarking harness exists yet (see `evaluation/latency/`, `evaluation/benchmark/`, `scripts/benchmark.py` — none implemented today).

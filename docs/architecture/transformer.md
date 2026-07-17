@@ -1,1 +1,0 @@
-Placeholder for backbone transformer architecture notes (currently a small `LlamaModel`-based toy backbone — see `models/backbone/transformer/`). Expand once the backbone is scaled beyond the toy prototype.

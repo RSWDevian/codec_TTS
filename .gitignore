@@ -4,6 +4,8 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
+opencode.json
+
 # generated/downloaded content -- directory structure is tracked via
 # .gitkeep, contents are not
 data/raw/*
@@ -24,3 +26,5 @@ checkpoints/*/*
 
 outputs/*/*
 !outputs/*/.gitkeep
+
+

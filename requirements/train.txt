@@ -1,8 +1,0 @@
--r inference.txt
-# NOTE: deliberately NOT depending on the HF `datasets` pip package here.
-# Our own top-level datasets/ directory is a Python package on sys.path
-# (see scripts/*.py's sys.path bootstrap) and would shadow it -- `import
-# datasets` would resolve to our local package, not the pip library. If a
-# future loader wants HF `datasets`, either rename our local package or
-# import the pip one via importlib with an explicit path.
-tensorboard

@@ -1,1 +1,0 @@
-Placeholder. Mimi's encoder/decoder are causal/streaming-capable, but today's prototype uses them in offline (whole-utterance) mode. Reserved for streaming inference design once `inference/streaming/` is implemented.

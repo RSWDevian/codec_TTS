@@ -1,5 +1,0 @@
--r train.txt
-pytest
-ruff
-black
-ipython
