@@ -1,0 +1,12 @@
+-r base.txt
+# torch and torchaudio are installed separately (see scripts/setup.sh) via
+# the CUDA-specific index URL, pinned to the same version -- an unpinned
+# torchaudio here can resolve to a newer release built against a different
+# CUDA runtime than torch (observed: torchaudio 2.11.0 needs libcudart.so.13,
+# incompatible with a CUDA-12.4 torch build), causing an import-time OSError.
+transformers>=4.52.1
+accelerate>=0.30
+huggingface_hub[cli]
+sentencepiece
+protobuf
+safetensors

@@ -1,0 +1,7 @@
+model_id: sesame/csm-1b
+device: cuda
+dtype: bfloat16
+sample_rate: 24000
+output_dir: outputs/audio
+speaker: "0"
+max_new_tokens: 256

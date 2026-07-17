@@ -1,0 +1,8 @@
+root_dir: data/raw/ljspeech
+native_sample_rate: 22050
+target_sample_rate: 24000
+subset_size: 32
+seed: 0
+tokenized_dir: data/tokenized/ljspeech
+manifest_path: data/metadata/ljspeech_subset.csv
+vocab_path: data/metadata/ljspeech_text_vocab.json
