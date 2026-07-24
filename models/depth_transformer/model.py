@@ -1,4 +1,4 @@
-"""Toy depth transformer: given the backbone's hidden state for one audio
+"""Depth transformer: given the backbone's hidden state for one audio
 frame, autoregressively predicts codebooks 1..7 for that frame (teacher
 forced). Frames are independent of each other here -- each is a length-7
 sequence [projected backbone hidden state, codebook_1, ..., codebook_6],
@@ -12,13 +12,13 @@ import torch
 import torch.nn as nn
 from transformers import LlamaModel
 
-from models.depth_transformer.config import ToyDepthConfig
+from models.depth_transformer.config import HindiDepthConfig
 from models.embeddings.codec_embeddings import MimiCodebookEmbeddings
 from models.heads.lm_head import LMHead
 
 
-class ToyDepthTransformer(nn.Module):
-    def __init__(self, config: ToyDepthConfig, codec_embeddings: MimiCodebookEmbeddings):
+class HindiDepthTransformer(nn.Module):
+    def __init__(self, config: HindiDepthConfig, codec_embeddings: MimiCodebookEmbeddings):
         super().__init__()
         self.config = config
         self.backbone_proj = nn.Linear(config.backbone_hidden_size, config.hidden_size)

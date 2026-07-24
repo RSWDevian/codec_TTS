@@ -1,4 +1,0 @@
-checkpoint_dir: checkpoints/toy_overfit
-device: cuda
-max_frames: 200
-frames_per_char: 2.0

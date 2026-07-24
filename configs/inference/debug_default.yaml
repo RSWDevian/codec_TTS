@@ -1,0 +1,7 @@
+checkpoint_dir: checkpoints/debug
+device: cuda
+frames_per_char: 1.65
+max_frames: 200
+top_k: 10
+temperature: 0.8
+repetition_penalty: 1.3

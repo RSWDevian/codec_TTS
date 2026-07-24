@@ -27,4 +27,7 @@ checkpoints/*/*
 outputs/*/*
 !outputs/*/.gitkeep
 
+backup_models/*/*
+!backup_models/*/.gitkeep
+
 

@@ -1,19 +1,26 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
-
 from transformers import LlamaConfig
 
 
-@dataclass
-class ToyDepthConfig:
-    backbone_hidden_size: int
-    audio_vocab_size: int = 2048
-    hidden_size: int = 128
-    num_hidden_layers: int = 2
-    num_attention_heads: int = 2
-    intermediate_size: int = 256
-    num_depth_codebooks: int = 7  # codebooks 1..7 (codebook 0 handled by the backbone)
+class HindiDepthConfig:
+    def __init__(
+        self,
+        backbone_hidden_size: int,
+        audio_vocab_size: int = 2048,
+        hidden_size: int = 128,
+        num_hidden_layers: int = 2,
+        num_attention_heads: int = 2,
+        intermediate_size: int = 256,
+        num_depth_codebooks: int = 7,
+    ):
+        self.backbone_hidden_size = backbone_hidden_size
+        self.audio_vocab_size = audio_vocab_size
+        self.hidden_size = hidden_size
+        self.num_hidden_layers = num_hidden_layers
+        self.num_attention_heads = num_attention_heads
+        self.intermediate_size = intermediate_size
+        self.num_depth_codebooks = num_depth_codebooks
 
     def to_llama_config(self) -> LlamaConfig:
         return LlamaConfig(

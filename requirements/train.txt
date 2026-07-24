@@ -1,0 +1,5 @@
+-r inference.txt
+indic-transliteration
+tensorboard
+gradio
+plotly

@@ -2,7 +2,7 @@
 transformers.CsmForConditionalGeneration.
 
 Mimi decoding happens *internally* in this checkpoint (it bundles its own
-Mimi weights) -- unlike the toy backend (toy_pipeline.py), this does NOT
+Mimi weights) -- unlike the hindi backend (hindi_pipeline.py), this does NOT
 go through codec/current/wrapper.py.
 
 Requires HF auth + accepted license terms for sesame/csm-1b and

@@ -1,7 +1,7 @@
 """Thin wrapper around the pretrained Kyutai Mimi codec (transformers.MimiModel).
 
-Used to tokenize/detokenize audio for the toy training scaffold in
-training/ and inference/pipeline/toy_pipeline.py. Not used by the pretrained
+Used to tokenize/detokenize audio for the training scaffold in
+training/ and inference/pipeline/hindi_pipeline.py. Not used by the pretrained
 CSM pipeline (inference/pipeline/csm_pipeline.py), which bundles its own
 Mimi decoding internally.
 """
@@ -12,10 +12,6 @@ import torch
 from transformers import AutoFeatureExtractor, MimiModel
 
 MODEL_ID = "kyutai/mimi"
-# kyutai/mimi's full config has 32 quantizers; we truncate to the first 8
-# (the model is trained with quantizer dropout / RVQ, so any prefix is a
-# valid, lower-bitrate ~1.1kbps operating point) to keep the toy backbone's
-# depth-transformer small and training fast for today's prototype.
 NUM_CODEBOOKS = 8
 CODEBOOK_SIZE = 2048
 FRAME_RATE_HZ = 12.5

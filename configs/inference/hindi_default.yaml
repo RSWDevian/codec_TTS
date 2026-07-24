@@ -1,0 +1,9 @@
+checkpoint_dir: checkpoints/hindi
+device: cuda
+# Real dataset average is ~1.10 frames/char (12.5Hz Mimi). This is now only a
+# safety cap -- actual stop point is model-driven via <audio_eos>.
+frames_per_char: 1.65
+max_frames: 400
+top_k: 10
+temperature: 0.8
+repetition_penalty: 1.3

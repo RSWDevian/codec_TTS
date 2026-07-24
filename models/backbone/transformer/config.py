@@ -4,9 +4,9 @@ from transformers import LlamaConfig
 
 
 @dataclass
-class ToyBackboneConfig:
+class HindiBackboneConfig:
     text_vocab_size: int
-    audio_vocab_size: int = 2048
+    audio_vocab_size: int = 2049  # 2048 Mimi codes + 1 reserved <audio_eos> id
     hidden_size: int = 256
     num_hidden_layers: int = 4
     num_attention_heads: int = 4

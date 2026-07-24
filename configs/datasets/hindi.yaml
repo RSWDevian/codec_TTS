@@ -1,0 +1,6 @@
+root_dir: data/raw/hindi_iisc
+native_sample_rate: 48000
+target_sample_rate: 24000
+tokenized_dir: data/tokenized/hindi_iisc
+manifest_path: data/metadata/hindi_iisc_manifest.csv
+vocab_path: data/metadata/hindi_iisc_vocab.json

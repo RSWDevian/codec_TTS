@@ -1,4 +1,4 @@
-"""Character-level (grapheme) tokenizer for the toy prototype."""
+"""Character-level (grapheme) tokenizer."""
 
 from __future__ import annotations
 
